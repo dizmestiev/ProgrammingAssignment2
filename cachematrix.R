@@ -6,7 +6,7 @@
 ## First commit.
 
 makeCacheMatrix <- function(x = matrix()) {
-
+   vector<-c(1,2,3,4)
 }
 
 
