@@ -9,7 +9,7 @@
 ## matr$set(orig_matr)
 ## cacheSolve(matr)
 ## round(matr$get() %*% matr$getinv(),5) ## Check if the result of matrices multiplication is an identity matrix
-## cacheSolve(matr) ## Please see that the matrix is retrieved from cache
+## cacheSolve(matr) ## Please see that the matrix is retrieved from cache on second function call
 
 
 
@@ -44,9 +44,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve calculates the inverse of the matrix stored by the special "vector" 
 ## created with the above function. However, it first checks to see if the inverse 
-## matrix has already been calculated. If so, it gets the mean from the cache and skips 
-## the computation. Otherwise, it calculates the mean of the data and sets the
-## value of the mean in the cache via the setmean function.
+## matrix has already been calculated. If so, it gets the inverse matrix from the cache and skips 
+## the computation. Otherwise, it calculates the inverse of the matrix and sets the
+## value of the inverse matrix in the cache via the setinv function.
 
 cacheSolve <- function(x, ...) {
         im <- x$getinv()
