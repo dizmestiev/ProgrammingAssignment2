@@ -12,6 +12,7 @@
 ## cacheSolve(matr) ## Please see that the matrix is retrieved from cache
 
 
+
 ## Funciton makeCacheMatrix creates a special "vector", 
 ## which is really a list containing the functions to:
 ## 1. set the value of the matrix (and reset a precalculated inverse matrix if 
